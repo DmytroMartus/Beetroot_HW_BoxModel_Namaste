@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+body * {
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    list-style-type: none;
+}
+
+h1 {
+    color: #0ec8cb;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.list__title {
+    height: 54px;
+    margin-bottom: 15px;
+}
+
+.header {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.main__list {
+    font-size: 0;
+}
+
+section {
+    font-size: 14px;
+    display: inline-block;
+    width: 20%;
+    height: 420px;
+    margin: 0; 
+    padding: 10px;
+    border-width: 2px 2px 2px 0;
+    border-style: solid;
+    border-color: #ececec;
+    background-color: #f7f7f7;
+    transition: all 0.2s ease-in-out;
+}
+
+
+section:first-child {
+    border-left: 2px solid #ececec;
+}
+
+.list__img {
+    position: relative;
+    height: 40%;
+}
+
+.list__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.fas {
+    font-size: 40px;
+    color: #1b1b1b;
+}
+
+/* .fas:hover {
+    color: #ffffff;
+} */
+
+.main__list section:hover {
+    background-color: #0ec8cb;
+    color: #ffffff;
+}
+
+section:hover .list__icon {
+    color: #ffffff;
+}
